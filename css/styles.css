@@ -1,0 +1,47 @@
+/* Estilos básicos del menú de navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Agregamos posición relativa */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff6600; /* Cambiar el color cuando el enlace está en hover */
+}
+
+/* Estilos para el submenú */
+nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Mostrar el submenú debajo del enlace */
+    left: 0;
+    background-color: #444;
+    padding: 5px;
+}
+
+nav li:hover .submenu {
+    display: block;
+}
+
+nav .submenu li {
+    display: block;
+    margin: 5px 0;
+    text-align: center; /* Centrar los elementos del submenú */
+}
